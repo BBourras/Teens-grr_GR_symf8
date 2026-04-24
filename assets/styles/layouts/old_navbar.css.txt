@@ -1,0 +1,87 @@
+/* Navbar globale */
+.navbar {
+    font-size: 0.95rem;
+    height: var(--navbar-height);
+}
+
+/* Liens de navbar */
+.navbar .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* espace icône / texte */
+    padding: 0.5rem 0.8rem;
+    transition: color 0.2s;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-accent);
+}
+
+/* Icônes pour Flux, Top et Légendes */
+.navbar .nav-link.nav-icon i {
+    color: var(--color-accent); /* couleur unique */
+    transition: color 0.2s;
+}
+
+.navbar .nav-link.nav-icon:hover i {
+    color: #fff;
+}
+
+/* Icônes pour Connexion et Déconnexion */
+
+/* Connexion */
+.login-link {              
+    color: #fff;
+}
+
+.login-link i {
+    color: var(--color-accent); 
+}
+
+.login-link:hover {             /* Hover */
+    color: var(--color-accent);
+}
+
+.login-link:hover i {
+    color: #fff;
+}
+
+/* Séparateur vertical court */
+.nav-separator {
+    width: 1px;
+    height: 18px; /* hauteur courte */
+    background-color: #e8dddd; /* visible sur fond noir */
+    margin: 0 0.5rem;
+    align-self: center;
+}
+
+/* Déconnexion  */
+.logout-link {
+    color: #fff;
+}
+
+.logout-link i {
+    color: #dc3545; 
+}
+
+/* Hover */
+.logout-link:hover {
+    color: #dc3545;
+}
+
+.logout-link:hover i {
+    color: #fff;
+}
+
+/* Badge Top optionnel */
+.nav-badge {
+    background-color: var(--color-accent); /* couleur accent */
+    color: #000;
+    border-radius: 0.3rem;
+    padding: 0 0.4rem;
+    font-size: 0.75rem;
+    margin-left: 0.3rem;
+    display: inline-block;
+    line-height: 1.2;
+}

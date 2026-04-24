@@ -1,0 +1,23 @@
+doctrine:
+    dbal:
+        url: '%env(resolve:DATABASE_URL)%'
+
+        profiling_collect_backtrace: '%kernel.debug%'
+
+    orm:
+        auto_mapping: true
+
+        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+
+        mappings:
+            App:
+                type: attribute
+                is_bundle: false
+                dir: '%kernel.project_dir%/src/Entity'
+                prefix: 'App\Entity'
+                alias: App
+
+        dql:
+            numeric_functions:
+                POWER: DoctrineExtensions\Query\Mysql\Power
+                TIMESTAMPDIFF: DoctrineExtensions\Query\Mysql\TimestampDiff

@@ -1,0 +1,43 @@
+/* assets/styles/components/buttons.css */
+
+/* =========================
+   BUTTON COMPONENT
+   ========================= */
+
+.btn {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+/* Primary variant */
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-accent);
+  color: #000;
+}
+
+/* .vote-section {
+    font-size: 0.95rem;
+}
+
+.vote-buttons .vote-btn {
+    min-width: 42px;
+    transition: all 0.2s ease;
+}
+
+.vote-buttons .vote-btn.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.vote-buttons .vote-btn:hover {
+    background-color: #e9ecef;
+} */

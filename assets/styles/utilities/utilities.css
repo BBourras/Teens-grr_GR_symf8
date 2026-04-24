@@ -1,0 +1,37 @@
+/* assets/styles/utilities/utilities.css */
+
+/* =========================
+   UTILITIES (HELPERS)
+   ========================= */
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+/* Margins top */
+.mt-1 { margin-top: var(--space-xs); }
+.mt-2 { margin-top: var(--space-sm); }
+.mt-3 { margin-top: var(--space-md); }
+.mt-4 { margin-top: var(--space-lg); }
+
+/* Margins horizontal */
+.mx-1 {
+  margin-left: var(--space-xs);
+  margin-right: var(--space-xs);
+}
+
+.mx-2 {
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+.mx-3 {
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+}
+
+/* State */
+.is-active {
+  color: var(--color-accent);
+}

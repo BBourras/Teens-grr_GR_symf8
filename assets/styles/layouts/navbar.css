@@ -1,0 +1,99 @@
+/* assets/styles/layouts/navbar.css */
+
+/* =========================
+   NAVBAR LAYOUT
+   ========================= */
+
+.navbar {
+  font-size: 0.95rem;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+}
+
+/* Generic link */
+.navbar__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-white);
+  transition: color var(--transition-fast);
+}
+
+.navbar__link:hover {
+  color: var(--color-accent);
+}
+
+/* Icon */
+.navbar__icon {
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+.navbar__link:hover .navbar__icon {
+  color: var(--color-white);
+}
+
+/* Force les icônes et le texte à rester sur la même ligne */
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Separator */
+.navbar__separator {
+  width: 1px;
+  height: 18px;
+  background-color: var(--color-separator);
+  margin: 0 var(--space-sm);
+}
+
+/* =========================
+   NAVBAR - SPECIAL LINKS
+   ========================= */
+
+/* Lien avec comportement inversé */
+.nav-link--highlight {
+  color: var(--color-white);
+  transition: color var(--transition-fast);
+}
+
+/* Icône dorée par défaut */
+.nav-link--highlight .nav-icon__icon {
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+/* Hover : inversion */
+.nav-link--highlight:hover {
+  color: var(--color-accent);
+}
+
+.nav-link--highlight:hover .nav-icon__icon {
+  color: var(--color-white);
+}
+
+/* =========================
+   NAVBAR - LIENS UTILISATEUR (Username, Nouveau post, Déconnexion, Connexion, Inscription)
+   ========================= */
+
+/* Texte et icône - on cible avec suffisamment de spécificité */
+.navbar-dark .navbar-nav .nav-link.nav-link--user {
+    color: var(--color-white);
+    transition: color var(--transition-fast);
+}
+
+.navbar-dark .navbar-nav .nav-link.nav-link--user .nav-icon__icon {
+    color: var(--color-orange); /* bleu */
+    transition: color var(--transition-fast);
+}
+
+/* Hover : inversion */
+.navbar-dark .navbar-nav .nav-link.nav-link--user:hover {
+    color: var(--color-orange);
+}
+
+.navbar-dark .navbar-nav .nav-link.nav-link--user:hover .nav-icon__icon {
+    color: var(--color-white);
+}

@@ -1,0 +1,8 @@
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon__icon {
+    font-size: 1.1rem;
+}

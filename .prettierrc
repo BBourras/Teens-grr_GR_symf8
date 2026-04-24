@@ -1,0 +1,11 @@
+{
+  "plugins": ["prettier-plugin-twig-melody"],
+  "overrides": [
+    {
+      "files": "*.twig",
+      "options": {
+        "parser": "melody"
+      }
+    }
+  ]
+}

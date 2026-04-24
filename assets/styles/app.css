@@ -1,0 +1,27 @@
+/* assets/styles/apps.css */
+
+/* =========================
+   MAIN ENTRY POINT .    L'ORDRE EST IMPORTANT
+   ========================= */
+
+/* 1. Abstracts (TOUJOURS EN PREMIER) */
+@import './abstracts/variables.css';
+
+/* 2. Base (reset + HTML elements) */
+@import './bases/reset.css';
+@import './bases/base.css';
+
+/* 3. Layouts */
+@import './layouts/navbar.css';
+@import './layouts/footer.css';
+
+/* 4. Components */
+@import './components/badge.css';
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/headings.css';
+@import './components/icons.css';
+@import './components/nav-auth.css';
+
+/* 5. Utilities (always last) */
+@import './utilities/utilities.css';
